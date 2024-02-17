@@ -1,0 +1,103 @@
+
+main {
+    display: block; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+nav {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000; 
+}
+
+.cutting-board-container {
+    color: #00abf0;
+    position: relative;
+    top: 30px;
+    left: 300px;
+    height: 400px;
+    background-image: url('img/cuttingborad.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Task 9: Adjust the font sizes for all headings */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 24px; /* Example font size */
+}
+
+
+h1 {
+    color: #007bff; /* Example color */
+    text-align: center;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Example margin */
+    font-size: 14px; /* Example font size */
+}
+
