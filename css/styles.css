@@ -19,7 +19,7 @@ main {
 
 .navbar a {
     font-size: 18px;
-    color: #ededed;
+    color: black;
     text-decoration: none;
     font-weight: 600;
     margin-left: 35px;
@@ -57,37 +57,33 @@ nav ul li a {
     color: #00abf0;
     position: relative;
     top: 30px;
-    left: 300px;
+    left: 0;  
+    right: 0; 
     height: 400px;
-    background-image: url('img/cuttingborad.jpg');
+    background-image: url('img/cuttingboard.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.image-text {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    color: white; 
-    font-size: 24px; 
-    font-weight: bold; 
-    text-align: center;
+.cutting-board-container img {
+    width: 100%;  
+    max-width: 100%;
+    display: block;
 }
 
 body {
     font-family: Arial, sans-serif;
 }
 
-/* Task 9: Adjust the font sizes for all headings */
+
 h1, h2, h3, h4, h5, h6 {
-    font-size: 24px; /* Example font size */
+    font-size: 24px;
 }
 
 
 h1 {
-    color: #007bff; /* Example color */
+    color: black; 
     text-align: center;
 }
 
@@ -96,8 +92,63 @@ ul, ol {
 }
 
 footer {
-    text-align: center; /* Center the text */
-    margin-top: 20px; /* Example margin */
-    font-size: 14px; /* Example font size */
+    text-align: center; 
+    margin-top: 20px; 
+    font-size: 14px; 
 }
+
+.featured-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.product {
+    width: 45%; 
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain; 
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.product p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+.reasons-to-buy,
+.customer-guarantee {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.reason {
+    display: inline-block;
+    width: 20%; /* Adjust the width based on your preference */
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+.reason img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+
 
