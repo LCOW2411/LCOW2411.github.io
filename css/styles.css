@@ -1,3 +1,4 @@
+/* SAHIL SHARMA*/
 
 main {
     display: block; 
@@ -53,18 +54,6 @@ nav ul li a {
     color: #000; 
 }
 
-.cutting-board-container {
-    color: #00abf0;
-    position: relative;
-    top: 30px;
-    left: 0;  
-    right: 0; 
-    height: 400px;
-    background-image: url('img/cuttingboard.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 .cutting-board-container img {
     width: 100%;  
@@ -74,6 +63,7 @@ nav ul li a {
 
 body {
     font-family: Arial, sans-serif;
+    background-color: aqua;
 }
 
 
@@ -82,9 +72,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
 h1 {
-    color: black; 
+    color: blue; 
     text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px; 
+    line-height: 1.5;
+}
+
+h1::after {
+    content: ""; 
+    display: block;
+    margin: 0 auto;
+    width: 50px; 
+    border-bottom: 2px solid #00abf0; 
+    margin-top: 10px; 
 }
 
 ul, ol {
@@ -130,15 +133,14 @@ footer {
 }
 
 
-.reasons-to-buy,
-.customer-guarantee {
+.reasons-to-buy {
     text-align: left;
     margin: 20px 0;
 }
 
 .reason {
     display: inline-block;
-    width: 20%; /* Adjust the width based on your preference */
+    width: 20%; 
     margin-right: 20px;
     box-sizing: border-box;
 }
@@ -151,4 +153,69 @@ footer {
 }
 
 
+.cutting-board-container {
+    position: relative;
+    height: 400px;
+    background-image: url('img/cuttingboard.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
 
+.cutting-board-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.cutting-board-overlay h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.cutting-board-overlay p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.take-look-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00abf0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.take-look-button:hover {
+    background-color: #0077a9;
+}
+
+.product-of-the-week,
+.weekly-sales,
+.reasons-to-buy {
+    text-align: center; 
+    margin-bottom: 40px;
+}
+
+.product-week {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.product-week img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
