@@ -100,37 +100,6 @@ footer {
     font-size: 14px; 
 }
 
-.featured-products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px 0;
-}
-
-.product {
-    width: 45%; 
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-}
-
-.product img {
-    width: 100%;
-    height: 200px;
-    object-fit: contain; 
-    border-radius: 8px;
-}
-
-.product h3 {
-    margin-top: 10px;
-    font-size: 18px;
-}
-
-.product p {
-    font-size: 14px;
-    color: #555;
-}
 
 
 .reasons-to-buy {
