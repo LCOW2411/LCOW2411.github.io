@@ -6,6 +6,7 @@ main {
     margin-bottom: 20px; 
     border-radius: 10px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-top: -50px;
 }
 
 .logo {
@@ -64,6 +65,7 @@ nav ul li a {
 body {
     font-family: Arial, sans-serif;
     background-color: aqua;
+    
 }
 
 
@@ -72,24 +74,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
 h1 {
-    color: blue; 
+    color: #00abf0; /* Change the text color to a more vibrant one */
     text-align: center;
-    font-size: 28px;
-    margin-bottom: 20px; 
+    font-size: 36px; /* Increase the font size for emphasis */
+    margin-bottom: 20px;
     line-height: 1.5;
+    font-family: 'Arial', sans-serif; /* Specify a font-family */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
 }
 
 h1::after {
-    content: ""; 
+    content: "";
     display: block;
     margin: 0 auto;
-    width: 50px; 
-    border-bottom: 2px solid #00abf0; 
-    margin-top: 10px; 
+    width: 50px;
+    border-bottom: 2px solid #00abf0;
+    margin-top: 10px;
 }
-
 ul, ol {
     padding-left: 20px;
 }
@@ -170,7 +172,7 @@ footer {
 .product-of-the-week,
 .weekly-sales,
 .reasons-to-buy {
-    text-align: center; 
+    text-align: center;
     margin-bottom: 40px;
 }
 
@@ -181,10 +183,47 @@ footer {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out; /* Add a smooth hover effect */
+}
+
+.product-week:hover {
+    transform: scale(1.05); /* Enlarge the product on hover */
 }
 
 .product-week img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+    transition: opacity 0.3s ease; /* Add a smooth fade-in effect */
 }
+
+.product-week:hover img {
+    opacity: 0.8; /* Reduce opacity on hover */
+}
+
+.reason {
+    display: inline-block;
+    width: 20%;
+    margin-right: 20px;
+    box-sizing: border-box;
+    border: 2px solid #00abf0; /* Add a border around each reason */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.reason img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0; /* Round the top corners */
+}
+
+.reason p {
+    background-color: #00abf0;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+}
+
