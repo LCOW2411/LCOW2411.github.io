@@ -75,13 +75,13 @@ h1, h2, h3, h4, h5, h6 {
 
 
 h1 {
-    color: #00abf0; /* Change the text color to a more vibrant one */
+    color: #00abf0; 
     text-align: center;
-    font-size: 36px; /* Increase the font size for emphasis */
+    font-size: 36px; 
     margin-bottom: 20px;
     line-height: 1.5;
-    font-family: 'Arial', sans-serif; /* Specify a font-family */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+    font-family: 'Arial', sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 h1::after {
