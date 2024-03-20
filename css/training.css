@@ -1,0 +1,76 @@
+/* SAHIL SHARMA - TRAINING STYLES */
+
+.training-info {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.training-info h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00abf0;
+}
+
+.training-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #00abf0;
+}
+
+.training-table caption {
+    caption-side: top;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.training-table th,
+.training-table td {
+    padding: 10px;
+    border: 1px solid #00abf0;
+}
+
+.training-table th {
+    background-color: #00abf0;
+    color: #fff;
+    text-align: left;
+}
+
+.training-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+.training-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.training-table tbody tr:hover {
+    background-color: #cceeff;
+}
+
+.training-table td:first-child img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+caption {
+    color: #00abf0;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+caption::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    border-bottom: 2px solid #00abf0;
+    margin-top: 10px;
+}
