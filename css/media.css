@@ -1,0 +1,53 @@
+/* Styles for media components */
+
+.media-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.media-content h1 {
+    color: #00abf0;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.audio-container,
+.video-container {
+    margin-bottom: 40px;
+}
+
+.audio-container h2,
+.video-container h2 {
+    color: #00abf0;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.audio-container audio,
+.video-container video {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.founder-image {
+    text-align: center;
+}
+
+.founder-image img {
+    border-radius: 50%;
+    border: 2px solid #00abf0; /* Change border color and size as needed */
+    width: 200px; /* Adjust image size as needed */
+    height: 200px;
+    display: inline-block;
+}
+
+.founder-image p {
+    color: #555;
+    font-size: 18px;
+    margin-top: 10px;
+}

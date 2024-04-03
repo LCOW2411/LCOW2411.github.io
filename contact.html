@@ -5,30 +5,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FineCraftSlice</title>
+    <title>FineCraftSlice - Contact Us</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
 </head>
 <body>
     <header class="header">
         <a class="logo" href="index.html"><img alt="logo" src="img/logo.jpg" width="150" height="100"></a>
     </header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home &nbsp; &nbsp;</a></li>
-                <li><a href="about.html">About &nbsp; &nbsp;</a></li>
-                <li><a href="team.html">Our Team &nbsp; &nbsp;</a></li>
-                <li><a href="specials.html">Specials &nbsp; &nbsp;</a></li>
-                <li><a href="training.html">Training &nbsp; &nbsp;</a></li>
-                <li><a href="media.html">Media &nbsp; &nbsp;</a></li>
-                <li><a href="faqs.html">FAQs &nbsp; &nbsp;</a></li>
-                <li><a href="contact.html">Contact Us &nbsp; &nbsp;</a></li>
-            </ul>
-        </nav>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home &nbsp; &nbsp;</a></li>
+            <li><a href="about.html">About &nbsp; &nbsp;</a></li>
+            <li><a href="team.html">Our Team &nbsp; &nbsp;</a></li>
+            <li><a href="specials.html">Specials &nbsp; &nbsp;</a></li>
+            <li><a href="training.html">Training &nbsp; &nbsp;</a></li>
+            <li><a href="media.html">Media &nbsp; &nbsp;</a></li>
+            <li><a href="faqs.html">FAQs &nbsp; &nbsp;</a></li>
+            <li><a href="contact.html">Contact Us &nbsp; &nbsp;</a></li>
+        </ul>
+    </nav>
 
-        <footer>
-            <p>&copy; Copyright 2099. All Rights Reserved.<br>
-            <a href="mailto:info@finecraftslice.com">Request information</a><br>
-            Sahil Sharma &nbsp; &nbsp; c0930789</p>
-        </footer>
+    <section class="contact-form">
+        <h1>Contact Us</h1>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <ol>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </li>
+                    <li>
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </li>
+                    <li>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </li>
+                    <li>
+                        <label for="category">Category:</label>
+                        <select id="category" name="category" required>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Technical Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label>Priority:</label>
+                        <input type="radio" id="priority-high" name="priority" value="high"><label for="priority-high">High</label>
+                        <input type="radio" id="priority-medium" name="priority" value="medium"><label for="priority-medium">Medium</label>
+                        <input type="radio" id="priority-low" name="priority" value="low"><label for="priority-low">Low</label>
+                    </li>
+                    <li>
+                        <label>Subscribe to Newsletter:</label>
+                        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                        <label for="subscribe">Yes, I would like to subscribe</label>
+                    </li>
+                </ol>
+            </fieldset>
+            <button type="submit">Submit Request</button>
+            <button type="reset">Reset Form</button>
+        </form>
+    </section>
 
-        
+    <footer>
+        <p>&copy; Copyright 2099. All Rights Reserved.<br>
+        <a href="mailto:info@finecraftslice.com">Request information</a><br>
+        Sahil Sharma &nbsp; &nbsp; c0930789</p>
+    </footer>
+</body>
+</html>
