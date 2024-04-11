@@ -8,6 +8,7 @@
     <title>FineCraftSlice - Contact Us</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <script defer src="js/script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -25,12 +26,20 @@
             <li><a href="contact.html">Contact Us &nbsp; &nbsp;</a></li>
         </ul>
     </nav>
-
     <section class="contact-form">
         <h1>Contact Us</h1>
-        <form>
+                <div class="contact">
+				<p class="tab-desk tel-num">(343)556-7829</p>
+				<p class="email-link"><a href="mailto:contact@finecraftslice.com"”>contact@finecraftslice.com</a></p>
+				<p>150 Hazel Street</p>
+            </div>
+        <div class="map-container">
+            <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.095742490522!2d-75.6778592236957!3d45.40740887107315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce059651a37b8d%3A0x25d769a72adfc114!2s150%20Hazel%20St%2C%20Ottawa%2C%20ON%20K1S%205T8!5e0!3m2!1sen!2sca!4v1712853263855!5m2!1sen!2sca"></iframe>
+        </div>
+        <form id="contactForm">
             <fieldset>
-                <legend>Contact Information</legend>
+                
+                <legend>Have questions or feedback? Fill out the form below, and we'll get back to you as soon as possible<br><br> <div id="greeting"></div> <!-- Dynamic greeting based on time of day --></legend>
                 <ol>
                     <li>
                         <label for="name">Name:</label>
