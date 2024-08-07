@@ -1,73 +1,86 @@
 /* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffd700; /* Gold background */
     margin: 0;
     padding: 0;
     color: #333;
 }
 
 header {
-    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    background: linear-gradient(to right, #ffd700);
     color: #fff;
     padding: 20px;
     text-align: center;
     border-bottom: 2px solid #ddd;
 }
 
+/* Fixed Sidebar for Company Name */
+.fixed-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px; /* Adjust width as needed */
+    height: 100%;
+    background-color: gold; /* Background color to match the design */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #ddd; /* Optional border for separation */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
 .site-title {
     font-family: 'Georgia', serif;
-    font-size: 3em;
+    font-size: 2.5em;
+    color: #333; /* Classic Text Color */
+    text-align: center;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    letter-spacing: 2px;
-    position: relative;
 }
 
-.site-title::after {
-    content: '';
-    display: block;
-    width: 50%;
-    height: 4px;
-    background: #fff;
-    margin: 10px auto 0;
-    border-radius: 2px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
+/* Banner Styles */
 .banner {
-    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-left: 220px; /* Adjust margin to account for fixed sidebar */
 }
 
 .banner-image {
     width: 100%;
     height: auto;
+    display: block;
 }
 
-.banner-content {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    text-align: center;
+/* Intro Section */
+.intro {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffd700; 
+    margin-left: 220px; /* Adjust margin to account for fixed sidebar */
 }
 
 .girl-image img {
-    width: 100px;
+    width: 900px; /* Increased size */
     height: auto;
-    margin-bottom: 10px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.slogan {
+    flex: 1;
 }
 
 .slogan h2 {
-    font-size: 2em;
+    font-size: 2.5em; /* Increased size */
     margin: 0;
 }
 
 .slogan p {
-    font-size: 1.2em;
+    font-size: 1.5em; /* Increased size */
+    line-height: 1.4;
 }
 
 /* Main Section */
@@ -75,6 +88,7 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    margin-left: 220px; /* Adjust margin to account for fixed sidebar */
 }
 
 /* Product List */
@@ -236,21 +250,6 @@ button:hover {
     margin: 20px 0;
 }
 
-button {
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1em;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
 /* Animation */
 @keyframes fadeIn {
     from {
@@ -261,4 +260,54 @@ button:hover {
         opacity: 1;
         transform: scale(1);
     }
+}
+
+/* Find Your Scent Section */
+#find-scent {
+    background-color: #ffd700; /* Gold Background */
+    color: #fff; /* White Text Color */
+    text-align: center;
+    padding: 30px; /* Increased Padding */
+    margin: 20px 0;
+    border-radius: 12px; /* Slightly Larger Border Radius */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased Shadow */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth Hover Transition */
+}
+
+#find-scent:hover {
+    transform: scale(1.05); /* Slightly Increase Size on Hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced Shadow on Hover */
+}
+
+#find-scent::before {
+    content: '✨✨✨'; /* Star Effects */
+    position: absolute;
+    top: 15px; /* Adjusted Position */
+    left: 15px; /* Adjusted Position */
+    font-size: 2.5em; /* Increased Size */
+    color: #ffeb3b; /* Yellow Stars */
+    opacity: 0.8; /* Slightly Increased Opacity */
+}
+
+#find-scent::after {
+    content: '✨✨✨'; /* Star Effects */
+    position: absolute;
+    bottom: 15px; /* Adjusted Position */
+    right: 15px; /* Adjusted Position */
+    font-size: 2.5em; /* Increased Size */
+    color: #ffd700; /* Yellow Stars */
+    opacity: 0.8; /* Slightly Increased Opacity */
+}
+
+#find-scent h2 {
+    font-size: 3em; /* Increased Heading Size */
+    margin: 0;
+    font-weight: bold; /* Bold Heading */
+}
+
+#find-scent p {
+    font-size: 1.5em; /* Increased Paragraph Size */
+    margin: 10px 0;
 }

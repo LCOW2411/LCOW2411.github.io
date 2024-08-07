@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enchanted Aura</title>
-    <link rel="icon" href="images/perfume.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enchanted Aura</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1 class="site-title">Enchanted Aura</h1><br/>
-        
-        <div class="banner">
-            <img src="images/header.png" alt="Banner Image" class="banner-image">
-            <div class="banner-content">
-                <div class="girl-image">
-                    <img src="images/girl.png" alt="Girl Holding Perfume">
-                </div>
-                <div class="slogan">
-                    <h2>Discover the Essence of Elegance</h2>
-                    <p>Indulge in our luxurious fragrances and find your signature scent today. Elevate your presence with every spritz of our exquisite perfumes.</p>
-                </div>
-            </div>
-        </div>
-    </header>
-    
-    <main>
-        <section id="products">
-            <!-- Products will be added here dynamically -->
-        </section>
-        
-        <section id="cart">
-            <h2>Your Cart</h2>
-            <div id="cart-items"></div>
-            <div id="total-price"></div>
-            <button id="clear-cart-button">Clear Cart</button>
-            <button id="checkout-button">Checkout</button>
-        </section>
-    </main>
-    
-    <div id="thank-you-popup" class="popup-overlay">
-        <div class="popup-content">
-            <h2>Thank You for Shopping with Us!</h2>
-            <p>Your order is being processed and we will notify you once it's shipped.</p>
-            <img src="images/thank-you.png" alt="Thank You" class="thank-you-image">
-        </div>
+  <!-- Fixed Sidebar for Company Name -->
+  <aside class="fixed-sidebar">
+    <h1 class="site-title">Enchanted Aura</h1>
+  </aside>
+
+  
+  <section class="banner">
+    <img src="images/header.png" alt="Banner" class="banner-image">
+  </section>
+  
+  <section class="intro">
+    <div class="girl-image">
+      <img src="images/girl.png" alt="Girl Holding Perfume">
     </div>
-    
-    <script src="script.js"></script>
+    <div class="slogan">
+      <h2>Experience the Magic of Scent</h2>
+      <p>Discover our exclusive collection of perfumes that captivate your senses.</p>
+    </div>
+  </section>
+
+  <!-- Add the new heading here -->
+  <section id="find-scent">
+    <h2>Find Your Scent</h2>
+  </section>
+  
+  <main>
+    <div id="products">
+      <!-- Product items will be dynamically inserted here -->
+    </div>
+    <aside id="cart">
+      <h2>Shopping Cart</h2>
+      <div id="cart-items"></div>
+      <p id="total-price">Total: $0.00</p>
+      <p id="tax-amount">Tax (10%): $0.00</p>
+      <button id="clear-cart-button">Clear Cart</button>
+      <button id="checkout-button">Checkout</button>
+    </aside>
+  </main>
+
+  <div class="popup-overlay" id="thank-you-popup">
+    <div class="popup-content">
+      <h2>Thank You!</h2>
+      <p>Your purchase was successful.</p>
+      <img src="images/thank-you.png" alt="Thank You" class="thank-you-image">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
