@@ -1,53 +1,52 @@
 <!DOCTYPE html>
-<!-- Created by SAHIL SHARMA - c0930789 -->
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FineCraftSlice</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="icon" type="image/x-icon" href="img/favicon.png">
-
+    <title>Enchanted Aura</title>
+    <link rel="icon" href="images/perfume.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <a class="logo" href="index.html"><img alt="logo" src="img/logo.jpg" width="150" height="100"></a>
-    </header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home &nbsp; &nbsp;</a></li>
-                <li><a href="about.html">About &nbsp; &nbsp;</a></li>
-                <li><a href="team.html">Our Team &nbsp; &nbsp;</a></li>
-                <li><a href="specials.html">Specials &nbsp; &nbsp;</a></li>
-                <li><a href="training.html">Training &nbsp; &nbsp;</a></li>
-                <li><a href="media.html">Media &nbsp; &nbsp;</a></li>
-                <li><a href="faqs.html">FAQs &nbsp; &nbsp;</a></li>
-                <li><a href="contact.html">Contact Us &nbsp; &nbsp;</a></li>
-            </ul>   
-        </nav>
-    
-
-        <div class="cutting-board-container">
-            <div class="cutting-board-overlay">
-                <h2>Explore Our Premium Cutting Boards</h2>
-                <p>Discover quality craftsmanship for your culinary journey.</p>
-                <a href="specials.html" class="take-look-button">Take a Look</a>
+    <header>
+        <h1 class="site-title">Enchanted Aura</h1><br/>
+        
+        <div class="banner">
+            <img src="images/header.png" alt="Banner Image" class="banner-image">
+            <div class="banner-content">
+                <div class="girl-image">
+                    <img src="images/girl.png" alt="Girl Holding Perfume">
+                </div>
+                <div class="slogan">
+                    <h2>Discover the Essence of Elegance</h2>
+                    <p>Indulge in our luxurious fragrances and find your signature scent today. Elevate your presence with every spritz of our exquisite perfumes.</p>
+                </div>
             </div>
-            <img src="img/cuttingborad.jpg" alt="cuttingborad" width="800" height="300">
         </div>
-
+    </header>
+    
     <main>
-        <section>
-            <h1>Welcome to FineCraftSlice: Where Every Slice Tells a Story.</h1>
+        <section id="products">
+            <!-- Products will be added here dynamically -->
         </section>
-    
+        
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="total-price"></div>
+            <button id="clear-cart-button">Clear Cart</button>
+            <button id="checkout-button">Checkout</button>
+        </section>
     </main>
-    <footer>
-        <p>&copy; Copyright 2099. All Rights Reserved.<br>
-        <a href="mailto:info@finecraftslice.com">Request information</a><br>
-        Sahil Sharma &nbsp; &nbsp; c0930789</p>
-    </footer>
     
+    <div id="thank-you-popup" class="popup-overlay">
+        <div class="popup-content">
+            <h2>Thank You for Shopping with Us!</h2>
+            <p>Your order is being processed and we will notify you once it's shipped.</p>
+            <img src="images/thank-you.png" alt="Thank You" class="thank-you-image">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
