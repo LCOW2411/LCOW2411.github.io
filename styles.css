@@ -7,14 +7,6 @@ body {
     color: #333;
 }
 
-header {
-    background: linear-gradient(to right, #ffd700);
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid #ddd;
-}
-
 /* Fixed Sidebar for Company Name */
 .fixed-sidebar {
     position: fixed;
@@ -42,8 +34,7 @@ header {
 
 /* Banner Styles */
 .banner {
-    width: 100%;
-    overflow: hidden;
+    width: calc(100% - 220px); /* Adjust width considering the fixed sidebar */
     margin-left: 220px; /* Adjust margin to account for fixed sidebar */
 }
 
@@ -93,6 +84,7 @@ main {
 
 /* Product List */
 #products {
+    flex: 1; /* Allow products section to take available space */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -309,5 +301,58 @@ button:hover {
 
 #find-scent p {
     font-size: 1.5em; /* Increased Paragraph Size */
-    margin: 10px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .fixed-sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 2px solid #ddd; /* Border on the bottom for smaller screens */
+    }
+
+    .site-title {
+        font-size: 2em;
+    }
+
+    .banner {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin-left: 0;
+    }
+
+    .girl-image img {
+        width: 100%; /* Responsive image width */
+        height: auto;
+        margin-right: 0;
+    }
+
+    .slogan h2 {
+        font-size: 2em;
+    }
+
+    .slogan p {
+        font-size: 1.2em;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    #products {
+        width: 100%;
+        justify-content: center;
+    }
+
+ 
 }
