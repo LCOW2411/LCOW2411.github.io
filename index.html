@@ -1,58 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enchanted Aura</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Sahil Sharma - Portfolio</title>
 </head>
 <body>
-  <!-- Fixed Sidebar for Company Name -->
-  <aside class="fixed-sidebar">
-    <h1 class="site-title">Enchanted Aura</h1>
-  </aside>
+    <header class="header">
+        <a href="#" class="logo">sahil.</a>
 
-  
-  <section class="banner">
-    <img src="images/header.png" alt="Banner" class="banner-image">
-  </section>
-  
-  <section class="intro">
-    <div class="girl-image">
-      <img src="images/girl.png" alt="Girl Holding Perfume">
-    </div>
-    <div class="slogan">
-      <h2>Experience the Magic of Scent</h2>
-      <p>Discover our exclusive collection of perfumes that captivate your senses.</p>
-    </div>
-  </section>
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Education</a>
+            <a href="#">Skills</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
-  <!-- Add the new heading here -->
-  <section id="find-scent">
-    <h2>Find Your Scent</h2>
-  </section>
-  
-  <main>
-    <div id="products">
-      <!-- Product items will be dynamically inserted here -->
-    </div>
-    <aside id="cart">
-      <h2>Shopping Cart</h2>
-      <div id="cart-items"></div>
-      <p id="total-price">Total: $0.00</p>
-      <button id="clear-cart-button">Clear Cart</button>
-      <button id="checkout-button">Checkout</button>
-    </aside>
-  </main>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I am Sahil Sharma</h1>
+            <h3>Software Developer</h3>
+            <p>I am a passionate and dedicated software development student currently pursuing my degree in Lambton College Canada. With a focus on full-stack development, I thrive on turning ideas into reality through clean and efficient code. Currently interning as a backend developer, I bring hands-on experience in Golang, Fiber Famework. My journey in software development started with a keen interest in Python, and it has since evolved into a love for creating robust and scalable applications.</p>
+            <div class="btn-box">
+                <a href="mailto:sahil.nomex@gmail.com">Hire Me</a>
+                <a href="#">Let's Talk</a>
 
-  <div class="popup-overlay" id="thank-you-popup">
-    <div class="popup-content">
-      <h2>Thank You!</h2>
-      <p>Your purchase was successful.</p>
-      <img src="images/thank-you.png" alt="Thank You" class="thank-you-image">
-    </div>
-  </div>
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="https://www.linkedin.com/in/sahil-sharma-533a4a1b0/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+            <a href="https://github.com/sahil-x8447" target="_blank"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.instagram.com/sahil_shaarmaa?igsh=d3BxMmg5a2Y5cXhn&utm_source=qr" target="_blank"><i class='bx bxl-instagram'></i></a>
 
-  <script src="script.js"></script>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+    <h2 class="heading">About<span> Me </span></h2>
+    <div class="about-img">
+        <img src="About.png" alt="">
+        <span class="circle-spin"></span>
+
+    </div>
+
+    <div class="about-content">
+        <h3>Software Developer</h3>
+        <p>Hello there! 👋 I'm Sahil Sharma, a dedicated and enthusiastic software development student on a mission to bring ideas to life through code. Currently pursuing my degree at Lambton College, my journey into the world of technology began with a fascination for problem-solving and a deep curiosity about how things work.</p>
+    
+    <div class="btn-box btns">
+        <a href="#" class="btn">Read More</a>
+    </div>
+</div>
+
+
+<!-- education section design -->
+<section class="education" id="education">
+    <h2 class="heading">My <span>Journey</span></h2>
+    <div class="education-row">
+        <div class="education-column">
+            <h3 class="title">Education</h3>
+            <div class="education-box">
+                <div class="education-content">
+                    <div class="content">
+                        <div class="year"><i class='bx bxs-calendar'></i> 2024-Present </div>
+                        <h3>Masters Degree - Lambton College</h3>
+                        <p>Major - Full Stack Software Development</p>
+                    </div>
+                </div>
+
+                <div class="education-content">
+                    <div class="content">
+                        <div class="year"><i class='bx bxs-calendar'></i> 2019-2022 </div>
+                        <h3>Bachelors Degree - GGSIPU </h3>
+                        <p>Major - Computer Applications</p>
+                    </div>
+                </div>
+
+                <div class="education-content">
+                    <div class="content">
+                        <div class="year"><i class='bx bxs-calendar'></i> 2018-2019 </div>
+                        <h3>Senior Secondary School - Dav Public School</h3>
+                        <p>Major - Physics,chemistry,Maths(PCM)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="education-column">
+            <h3 class="title">Experience</h3>
+            <div class="education-box">
+                <div class="education-content">
+                    <div class="content">
+                        <div class="year"><i class='bx bxs-calendar'></i> July 2023-Dec 2023 </div>
+                        <h3>Software Developer - RamzVPN</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="education-content">
+                    <div class="content">
+                        <div class="year"><i class='bx bxs-calendar'></i> july 2022-March 2023 </div>
+                        <h3> Technology Consultant - Team1 Consulting Pvt Ltd </h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="education-content">
+                    <div class="content">
+                        <div class="year"><i class='bx bxs-calendar'></i> June 2021 - July 2021 </div>
+                        <h3>Pyhton Programmer Trainee - Allsoft Solution</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- skilss section design -->
+<section class="skills" id="skills">
+    <h2 class="heading">My Skills</h2>
+    <div class="skills-container">
+        <div class="skill">
+            <h3>Python</h3>
+            <div class="skill-bar">
+                <div class="bar" style="width: 90%;"></div> 
+            </div>
+        </div>
+        <div class="skill">
+            <h3>C++</h3>
+            <div class="skill-bar">
+                <div class="bar" style="width: 80%;"></div> 
+            </div>
+        </div>
+        <div class="skill">
+            <h3>SQL</h3>
+            <div class="skill-bar">
+                <div class="bar" style="width: 85%;"></div> 
+            </div>
+        </div>
+        <div class="skill">
+            <h3>HTML</h3>
+            <div class="skill-bar">
+                <div class="bar" style="width: 85%;"></div> 
+            </div>
+        </div>
+        <div class="skill">
+            <h3>CSS</h3>
+            <div class="skill-bar">
+                <div class="bar" style="width: 80%;"></div> 
+            </div>
+        </div>
+        <div class="skill">
+            <h3>DBMS</h3>
+            <div class="skill-bar">
+                <div class="bar" style="width: 85%;"></div> 
+            </div>
+        </div>
+        <div class="skill">
+            <h3>Golang</h3>
+            <div class="skill-bar">
+                <div class="bar" style="width: 75%;"></div> 
+            </div>
+        </div>
+        <div class="skill">
+            <h3>MongoDB</h3>
+            <div class="skill-bar">
+                <div class="bar" style="width: 70%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>C#</h3>
+            <div class="skill-bar">
+                <div class="bar" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>Java</h3>
+            <div class="skill-bar">
+                <div class="bar" style="width: 85%;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+</section>
+<script src="script.js"></script>
 </body>
 </html>
